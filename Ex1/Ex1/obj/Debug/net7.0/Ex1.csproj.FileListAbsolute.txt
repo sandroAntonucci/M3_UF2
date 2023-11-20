@@ -1,0 +1,15 @@
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\bin\Debug\net7.0\Ex1.exe
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\bin\Debug\net7.0\Ex1.deps.json
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\bin\Debug\net7.0\Ex1.runtimeconfig.json
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\bin\Debug\net7.0\Ex1.dll
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\bin\Debug\net7.0\Ex1.pdb
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.csproj.AssemblyReference.cache
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.AssemblyInfoInputs.cache
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.AssemblyInfo.cs
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.dll
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\refint\Ex1.dll
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.pdb
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\Ex1.genruntimeconfig.cache
+D:\SandroA\M3\M3_UF2\Ex1\Ex1\obj\Debug\net7.0\ref\Ex1.dll
