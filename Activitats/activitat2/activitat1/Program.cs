@@ -23,18 +23,26 @@ namespace MyApplication
             
         }
 
-        public static int PowerMethod(int num, int exp)
+        public static float PowerMethod(int num, int exp)
         {
-            int result = 1;
+            float result = 1;
 
-            for(int i = 0; i < exp; i++)
+            if(exp < 0)
             {
-                result *= num;
+                for (int i = 0; i < exp*-1; i++)
+                {
+                    result /= num;
+                }
             }
-
+            else
+            {
+                for (int i = 0; i < exp; i++)
+                {
+                    result *= num;
+                }
+            }
+            
             return result;
         }
-
-
     }
 }
