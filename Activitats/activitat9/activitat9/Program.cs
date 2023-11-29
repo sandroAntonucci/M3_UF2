@@ -22,7 +22,7 @@ namespace MyApplication
             const string MsgMin = "Introdueix un mínim: ";
             const string MsgEnd = "\nPrem una tecla per continuar.";
 
-            int num, minValue, maxValue;
+            int num, minValue, maxValue, testNum = 5;
 
             Console.Write(MsgNum);
             num = Convert.ToInt32(Console.ReadLine());
@@ -33,9 +33,26 @@ namespace MyApplication
             Console.Write(MsgMin);
             minValue = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine(Validate(num, testNum) ? $"El número és més petit que {num}" : $"El número és més gran que {num}");
+            Console.WriteLine(Validate(minValue, maxValue, testNum) ? $"El número està entre {minValue} i {maxValue}" : $"El número no està entre {minValue} i {maxValue}");
+
 
             Console.WriteLine(MsgEnd);
             Console.ReadKey();
+        }
+
+        public static bool Validate(int num, int testNum)
+        {
+
+            return testNum < num;
+
+        }
+
+        public static bool Validate(int minValue, int maxValue, int testNum)
+        {
+
+            return testNum > minValue && testNum <  maxValue;
+
         }
     }
 }
