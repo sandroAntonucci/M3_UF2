@@ -38,14 +38,16 @@ namespace MyApplication
 
             if(liters > 0)
             {
-                if (liters < 150)
+                if (liters <= 150)
                 {
                     price += liters * 0.1;
                 }
 
                 else
                 {
-                    price += (149 * 0.1) + ((price-149)*0.3);
+                    price += 150 * 0.1;
+                    liters -= 150;
+                    price += liters * 0.3;
                 }
             }
 

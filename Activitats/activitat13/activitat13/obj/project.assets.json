@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat12/activitat12/activitat12.csproj",
-      "projectName": "activitat12",
-      "projectPath": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat12/activitat12/activitat12.csproj",
+      "projectUniqueName": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat13/activitat13/activitat13.csproj",
+      "projectName": "activitat13",
+      "projectPath": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat13/activitat13/activitat13.csproj",
       "packagesPath": "/Users/sandro/.nuget/packages/",
-      "outputPath": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat12/activitat12/obj/",
+      "outputPath": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat13/activitat13/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sandro/.nuget/NuGet/NuGet.Config"
