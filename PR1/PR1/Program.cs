@@ -28,67 +28,52 @@ namespace GameProject
             const string MsgStart = " Benvingut a Herois vs Monstre!\n Que vols fer?";
             const string MsgPlay = "\n 1. Iniciar una nova batalla";
             const string MsgQuit = " 0. Sortir\n";
-            const string MsgCharStats = "\nOK! Començem amb la creació de personatges. ";
 
             const string MsgDecoration = "\n\n-----------------------------------------\n\n";
-            const string MsgDecorationArcher = "\n\n--- Estadístiques d'arquera ---\n\n";
-            const string MsgDecorationBarbarian = "\n\n--- Estadístiques de bàrbar ---\n\n";
-            const string MsgDecorationMage = "\n\n--- Estadístiques de maga ---\n\n";
-            const string MsgDecorationDruid = "\n\n--- Estadístiques de druida ---\n\n";
-            const string MsgDecorationMonster = "\n\n--- Estadístiques de monstre ---\n\n";
-
-            const string MsgOutOfTriesStats = "\nT'has equivocat 3 vegades, torna a introduir els atributs.";
-            const string MsgOutOfTriesCharacters = "\nT'has equivocat 3 vegades donant atributs als personatges, tornes al menu principal.";
+            const string MsgStats = " - Vida: {0} \n - Dany: {1}\n - Reducció de dany: {2}";
+            const string MsgStatsArcher = "--- Estadístiques d'arquera ---\n\n";
+            const string MsgStatsBarbarian = "\n\n--- Estadístiques de bàrbar ---\n\n";
+            const string MsgStatsMage = "\n\n--- Estadístiques de maga ---\n\n";
+            const string MsgStatsDruid = "\n\n--- Estadístiques de druida ---\n\n";
+            const string MsgStatsMonster = "\n\n--- Estadístiques de monstre ---\n\n";
 
             const string MsgArcherName = "Arquera";
-            const string MsgArcherHP = "\n - Introdueix la vida de l'arquera (entre 1500 i 2000): ";
-            const string MsgArcherDMG = "\n - Introdueix l'atac de l'arquera (entre 180 i 300): ";
-            const string MsgArcherReduct = "\n - Introdueix la reducció de dany de l'arquera (entre 25% i 40%): ";
             const string MsgArcherSpecial = "\n - L'arquera activa la seva habilitat especial i el monstre no pot atacar durant dos torns.";
             const string MsgArcherDied = "\nL'arquera ha mort :(";
 
             const string MsgBarbarianName = "Bàrbar";
-            const string MsgBarbarianHP = "\n - Introdueix la vida del bàrbar (entre 3000 i 3750): ";
-            const string MsgBarbarianDMG = "\n - Introdueix l'atac del bàrbar (entre 150 i 250): ";
-            const string MsgBarbarianReduct = "\n - Introdueix la reducció de dany del bàrbar (entre 35% i 45%): ";
             const string MsgBarbarianSpecial = "\n - El bàrbar activa la seva habilitat especial i augmenta la seva defensa al 100% durant 3 torns.";
             const string MsgBarbarianMaxReduct = "\nLa reducció de dany del bàrbar ja està al 100%";
             const string MsgBarbarianDied = "El bàrbar ha mort :(";
 
 
             const string MsgMageName = "Maga";
-            const string MsgMageHP = "\n - Introdueix la vida del mag (entre 1000 i 1500): ";
-            const string MsgMageDMG = "\n - Introdueix l'atac del mag (entre 300 i 350): ";
-            const string MsgMageReduct = "\n - Introdueix la reducció de dany del mag (entre 20% i 35%): ";
             const string MsgMageSpecial = "\n - La maga activa la seva habilitat especial i dispara una bola de foc que fa 3 cops el seu atac.";
             const string MsgMageDied = "El mag ha mort :(";
 
             const string MsgDruidName = "Druida";
-            const string MsgDruidHP = "\n - Introdueix la vida del druida (entre 2000 i 2500): ";
-            const string MsgDruidDMG = "\n - Introdueix l'atac del druida (entre 70 i 120): ";
-            const string MsgDruidReduct = "\n - Introdueix la reducció de dany del druida (entre 25% i 40%): ";
             const string MsgDruidSpecial = "\n - El druida activa la seva habilitat especial i cura a tothom 500 de vida.";
             const string MsgDruidDied = "El druida ha mort :(";
 
             const string MsgMonsterName = "Monstre";
-            const string MsgMonsterHP = "\n - Introdueix la vida del monstre (entre 9000 i 12000): ";
-            const string MsgMonsterDMG = "\n - Introdueix l'atac del monstre (entre 250 i 400): ";
-            const string MsgMonsterReduct = "\n - Introdueix la reducció de dany del monstre (entre 20% i 30%): ";
             const string MsgMonsterAttack = "\nEl monstre ataca a tots els herois: ";
             const string MsgMonsterCantAttack = "\nEl monstre està atordit i no pot atacar.";
 
             const string MsgBattle = "Comença la batalla!";
             const string MsgTurn = "Torn ";
 
-            int startGame, menuTries, statsTries = 3, characterTries = 3, turnTries = 3, actionChosen = 0, turn = 1;
+            int startGame, menuTries, turnTries = 3, actionChosen = 0, turn = 1;
 
-            double archerHP = 0, archerMaxHP = 0, archerDMG = 0, archerReduct = 0, currentArcherReduct = 0, archerSpecialCooldown = 0;
-            double barbarianHP = 0, barbarianMaxHP = 0, barbarianDMG = 0, barbarianReduct = 0, currentBarbarianReduct = 0, barbarianSpecialCooldown = 0, barbarianReductSpecialTurns = 0;
-            double mageHP = 0, mageMaxHP = 0, mageDMG = 0, mageReduct = 0, currentMageReduct = 0, mageSpecialCooldown = 0;
-            double druidHP = 0, druidMaxHP = 0, druidDMG = 0, druidReduct = 0, currentDruidReduct = 0, druidSpecialCooldown = 0;
-            double monsterHP = 0, monsterDMG = 0, monsterReduct = 0, monsterStun = 0;
+            Random random = new Random();
 
+            //Assigna estadístiques aleatòries a cada personatge
+            double archerHP = random.Next(ArcherMinRangeHP, ArcherMaxRangeHP + 1), archerMaxHP = archerHP, archerDMG = random.Next(ArcherMinRangeDMG, ArcherMaxRangeDMG + 1), archerReduct = random.Next(ArcherMinRangeReduct, ArcherMaxRangeReduct + 1), currentArcherReduct = archerReduct, archerSpecialCooldown = 0;
+            double barbarianHP = random.Next(BarbarianMinRangeHP, BarbarianMaxRangeHP + 1), barbarianMaxHP = barbarianHP, barbarianDMG = random.Next(BarbarianMinRangeDMG, BarbarianMaxRangeDMG + 1), barbarianReduct = random.Next(BarbarianMinRangeReduct, BarbarianMaxRangeReduct + 1), currentBarbarianReduct = barbarianReduct, barbarianSpecialCooldown = 0, barbarianReductSpecialTurns = 0;
+            double mageHP = random.Next(MageMinRangeHP, MageMaxRangeHP + 1), mageMaxHP = mageHP, mageDMG = random.Next(MageMinRangeDMG, MageMaxRangeDMG + 1), mageReduct = random.Next(MageMinRangeReduct, MageMaxRangeReduct + 1), currentMageReduct = mageReduct, mageSpecialCooldown = 0;
+            double druidHP = random.Next(DruidMinRangeHP, DruidMaxRangeHP + 1), druidMaxHP = druidHP, druidDMG = random.Next(DruidMinRangeDMG, DruidMaxRangeDMG + 1), druidReduct = random.Next(DruidMinRangeReduct, DruidMaxRangeReduct + 1), currentDruidReduct = druidReduct, druidSpecialCooldown = 0;
+            double monsterHP = random.Next(MonsterMinRangeHP, MonsterMaxRangeHP + 1), monsterDMG = random.Next(MonsterMinRangeDMG, MonsterMaxRangeDMG + 1), monsterReduct = random.Next(MonsterMinRangeReduct, MonsterMaxRangeReduct + 1), monsterStun = 0;
 
+            
 
             bool exitGame = false, archerCompleted = false, barbarianCompleted = false, mageCompleted = false, druidCompleted = false, monsterCompleted = false, turnEnded = false;
 
@@ -143,371 +128,16 @@ namespace GameProject
 
                     case One:         // Joc
 
-                        Console.WriteLine(MsgCharStats);
-                        Console.ReadKey();
-
-                        // Introducció de característiques
-                        // Estadístiques Arquera
-
-                        characterTries = Three;
-                        archerCompleted = false;
-
-                        while (characterTries > Zero && !(archerCompleted))
-                        {
-
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.Write(MsgDecorationArcher);
-
-                            statsTries = Three;
-                            archerHP = Zero;
-                            archerDMG = Zero;
-                            archerReduct = Zero;
-
-                            // Cada while comprova si el stat està dins del rang i si tens intents, si no, et resta un intent i torna a demanar stat
-
-                            // Vida Arquera
-                            while ((archerHP < ArcherMinRangeHP || archerHP > ArcherMaxRangeHP) && statsTries > Zero)
-                            {
-                                Console.Write(MsgArcherHP);
-                                archerHP = Convert.ToDouble(Console.ReadLine());
-                                archerMaxHP = archerHP;
-
-                                if (archerHP < ArcherMinRangeHP || archerHP > ArcherMaxRangeHP)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Dany arquera
-                            while ((archerDMG < ArcherMinRangeDMG || archerDMG > ArcherMaxRangeDMG) && statsTries > Zero)
-                            {
-                                Console.Write(MsgArcherDMG);
-                                archerDMG = Convert.ToDouble(Console.ReadLine());
-
-                                if (archerDMG < ArcherMinRangeDMG || archerDMG > ArcherMaxRangeDMG)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Reducció de dany arquera
-                            while ((archerReduct < ArcherMinRangeReduct || archerReduct > ArcherMaxRangeReduct) && statsTries > Zero)
-                            {
-                                Console.Write(MsgArcherReduct);
-                                archerReduct = Convert.ToDouble(Console.ReadLine());
-
-                                if (archerReduct < ArcherMinRangeReduct || archerReduct > ArcherMaxRangeReduct)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Comprova si tots els stats de l'arquera son correctes per a poder continuar cap al següent personatge
-                            if (!(archerHP < ArcherMinRangeHP || archerHP > ArcherMaxRangeHP) && !(archerDMG < ArcherMinRangeDMG || archerDMG > ArcherMaxRangeDMG) && !(archerReduct < ArcherMinRangeReduct || archerReduct > ArcherMaxRangeReduct))
-                            {
-
-                                archerCompleted = true;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine(MsgOutOfTriesStats);
-                                Console.ReadKey();
-                                characterTries--;
-                            }
-                        }
-
-                        // Estadístiques Bàrbar
-                        barbarianCompleted = false;
-
-                        while (characterTries > Zero && !(barbarianCompleted))
-                        {
-
-                            Console.Clear();
-                            Console.Write(MsgDecorationBarbarian);
-
-                            statsTries = Three;
-                            barbarianHP = Zero;
-                            barbarianDMG = Zero;
-                            barbarianReduct = Zero;
-
-                            // Vida Bàrbar
-                            while ((barbarianHP < BarbarianMinRangeHP || barbarianHP > BarbarianMaxRangeHP) && statsTries > Zero)
-                            {
-                                Console.Write(MsgBarbarianHP);
-                                barbarianHP = Convert.ToDouble(Console.ReadLine());
-                                barbarianMaxHP = barbarianHP;
-
-                                if (barbarianHP < BarbarianMinRangeHP || barbarianHP > BarbarianMaxRangeHP)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Dany Bàrbar
-                            while ((barbarianDMG < BarbarianMinRangeDMG || barbarianDMG > BarbarianMaxRangeDMG) && statsTries > Zero)
-                            {
-                                Console.Write(MsgBarbarianDMG);
-                                barbarianDMG = Convert.ToDouble(Console.ReadLine());
-
-                                if (barbarianDMG < BarbarianMinRangeDMG || barbarianDMG > BarbarianMaxRangeDMG)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Reducció de dany Bàrbar
-                            while ((barbarianReduct < BarbarianMinRangeReduct || barbarianReduct > BarbarianMaxRangeReduct) && statsTries > Zero)
-                            {
-                                Console.Write(MsgBarbarianReduct);
-                                barbarianReduct = Convert.ToDouble(Console.ReadLine());
-
-                                if (barbarianReduct < BarbarianMinRangeReduct || barbarianReduct > BarbarianMaxRangeReduct)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Comprova si tots els stats de l'arquera son correctes per a poder continuar cap al següent personatge
-                            if (!(barbarianHP < BarbarianMinRangeHP || barbarianHP > BarbarianMaxRangeHP) && !(barbarianDMG < BarbarianMinRangeDMG || barbarianDMG > BarbarianMaxRangeDMG) && !(barbarianReduct < BarbarianMinRangeReduct || barbarianReduct > BarbarianMaxRangeReduct))
-                            {
-
-                                barbarianCompleted = true;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine(MsgOutOfTriesStats);
-                                Console.ReadKey();
-                                characterTries--;
-                            }
-                        }
-
-                        // Estadístiques Maga
-                        mageCompleted = false;
-
-                        while (characterTries > Zero && !(mageCompleted))
-                        {
-
-                            Console.Clear();
-                            Console.Write(MsgDecorationMage);
-
-                            statsTries = Three;
-                            mageHP = Zero;
-                            mageDMG = Zero;
-                            mageReduct = Zero;
-
-                            // Vida Maga
-                            while ((mageHP < MageMinRangeHP || mageHP > MageMaxRangeHP) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMageHP);
-                                mageHP = Convert.ToDouble(Console.ReadLine());
-                                mageMaxHP = mageHP;
-
-                                if (mageHP < MageMinRangeHP || mageHP > MageMaxRangeHP)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Dany Maga
-                            while ((mageDMG < MageMinRangeDMG || mageDMG > MageMaxRangeDMG) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMageDMG);
-                                mageDMG = Convert.ToDouble(Console.ReadLine());
-
-                                if (mageDMG < MageMinRangeDMG || mageDMG > MageMaxRangeDMG)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Reducció de dany Maga
-                            while ((mageReduct < MageMinRangeReduct || mageReduct > MageMaxRangeReduct) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMageReduct);
-                                mageReduct = Convert.ToDouble(Console.ReadLine());
-
-                                if (mageReduct < MageMinRangeReduct || mageReduct > MageMaxRangeReduct)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Comprova si tots els stats del mag son correctes per a poder continuar cap al següent personatge
-                            if (!(mageHP < MageMinRangeHP || mageHP > MageMaxRangeHP) && !(mageDMG < MageMinRangeDMG || mageDMG > MageMaxRangeDMG) && !(mageReduct < MageMinRangeReduct || mageReduct > MageMaxRangeReduct))
-                            {
-
-                                mageCompleted = true;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine(MsgOutOfTriesStats);
-                                Console.ReadKey();
-                                characterTries--;
-                            }
-                        }
-
-                        // Estadístiques Druida
-                        druidCompleted = false;
-
-                        while (characterTries > Zero && !(druidCompleted))
-                        {
-
-                            Console.Clear();
-                            Console.Write(MsgDecorationDruid);
-
-                            statsTries = Three;
-                            druidHP = Zero;
-                            druidDMG = Zero;
-                            druidReduct = Zero;
-
-                            // Vida Druida
-                            while ((druidHP < DruidMinRangeHP || druidHP > DruidMaxRangeHP) && statsTries > Zero)
-                            {
-                                Console.Write(MsgDruidHP);
-                                druidHP = Convert.ToDouble(Console.ReadLine());
-                                druidMaxHP = druidHP;
-
-                                if (druidHP < DruidMinRangeHP || druidHP > DruidMaxRangeHP)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Dany Druida
-                            while ((druidDMG < DruidMinRangeDMG || druidDMG > DruidMaxRangeDMG) && statsTries > Zero)
-                            {
-                                Console.Write(MsgDruidDMG);
-                                druidDMG = Convert.ToDouble(Console.ReadLine());
-
-                                if (druidDMG < DruidMinRangeDMG || druidDMG > DruidMaxRangeDMG)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Reducció de dany Druida
-                            while ((druidReduct < DruidMinRangeReduct || druidReduct > DruidMaxRangeReduct) && statsTries > Zero)
-                            {
-                                Console.Write(MsgDruidReduct);
-                                druidReduct = Convert.ToDouble(Console.ReadLine());
-
-                                if (druidReduct < DruidMinRangeReduct || druidReduct > DruidMaxRangeReduct)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Comprova si tots els stats del druida son correctes per a poder continuar cap al següent personatge
-                            if (!(druidHP < DruidMinRangeHP || druidHP > DruidMaxRangeHP) && !(druidDMG < DruidMinRangeDMG || druidDMG > DruidMaxRangeDMG) && !(druidReduct < DruidMinRangeReduct || druidReduct > DruidMaxRangeReduct))
-                            {
-
-                                druidCompleted = true;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine(MsgOutOfTriesStats);
-                                Console.ReadKey();
-                                characterTries--;
-                            }
-                        }
-
-                        // Estadístiques Monstre
-                        monsterCompleted = false;
-
-                        while (characterTries > Zero && !(monsterCompleted))
-                        {
-                            Console.Clear();
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.Write(MsgDecorationMonster);
-
-                            statsTries = Three;
-                            monsterHP = Zero;
-                            monsterDMG = Zero;
-                            monsterReduct = Zero;
-
-                            // Vida Monstre
-                            while ((monsterHP < MonsterMinRangeHP || monsterHP > MonsterMaxRangeHP) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMonsterHP);
-                                monsterHP = Convert.ToDouble(Console.ReadLine());
-
-                                if (monsterHP < MonsterMinRangeHP || monsterHP > MonsterMaxRangeHP)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Dany Monstre
-                            while ((monsterDMG < MonsterMinRangeDMG || monsterDMG > MonsterMaxRangeDMG) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMonsterDMG);
-                                monsterDMG = Convert.ToDouble(Console.ReadLine());
-
-                                if (monsterDMG < MonsterMinRangeDMG || monsterDMG > MonsterMaxRangeDMG)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Reducció de dany Monstre
-                            while ((monsterReduct < MonsterMinRangeReduct || monsterReduct > MonsterMaxRangeReduct) && statsTries > Zero)
-                            {
-                                Console.Write(MsgMonsterReduct);
-                                monsterReduct = Convert.ToDouble(Console.ReadLine());
-
-                                if (monsterReduct < MonsterMinRangeReduct || monsterReduct > MonsterMaxRangeReduct)
-                                {
-                                    Console.WriteLine(MsgInputNotValid);
-                                    statsTries--;
-                                }
-                            }
-
-                            // Comprova si tots els stats del druida son correctes per a poder continuar cap al següent personatge
-                            if (!(monsterHP < MonsterMinRangeHP || monsterHP > MonsterMaxRangeHP) && !(monsterDMG < MonsterMinRangeDMG || monsterDMG > MonsterMaxRangeDMG) && !(monsterReduct < MonsterMinRangeReduct || monsterReduct > MonsterMaxRangeReduct))
-                            {
-
-                                monsterCompleted = true;
-
-                            }
-                            else
-                            {
-                                Console.WriteLine(MsgOutOfTriesStats);
-                                Console.ReadKey();
-                                characterTries--;
-                            }
-                        }
-
-                        // Comprova si l'usuari s'ha quedat sense intents
-                        if (characterTries == Zero)
-                        {
-                            Console.WriteLine(MsgOutOfTriesCharacters);
-                            break;
-                        }
-
-
-
-
-                        // Joc
-
                         Console.WriteLine("\n - " + MsgBattle);
+                        Console.ReadKey();
+                        Console.WriteLine(MsgDecoration);
+                        Console.WriteLine(MsgStatsArcher + MsgStats, archerHP, archerDMG, archerReduct);
+                        Console.ReadKey();
+                        Console.WriteLine(MsgStatsBarbarian + MsgStats, barbarianHP, barbarianDMG, barbarianReduct);
+                        Console.ReadKey();
+                        Console.WriteLine(MsgStatsMage + MsgStats, mageHP, mageDMG, mageReduct);
+                        Console.ReadKey();
+                        Console.WriteLine(MsgStatsDruid + MsgStats, druidHP, druidDMG, druidReduct);
                         Console.ReadKey();
 
                         turn = 1;
@@ -917,7 +547,6 @@ namespace GameProject
 
                                     if (barbarianHP > Zero)
                                     {
-                                        Console.WriteLine("CurrentBarbarianReduct: " + currentBarbarianReduct);
                                         barbarianHP -= monsterDMG * ((Percent - currentBarbarianReduct) / Percent);
                                         Console.WriteLine(MsgMonsterName + " ataca a " + MsgBarbarianName + " amb " + monsterDMG + " de dany. El bàrbar es defensa i rep només " + (monsterDMG * ((Percent - currentBarbarianReduct) / Percent)) + " de dany. Vida restant del bàrbar: " + barbarianHP + " HP");
 
