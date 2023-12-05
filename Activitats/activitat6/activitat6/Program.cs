@@ -15,7 +15,7 @@ namespace MyApplication
     class MethodAbsolute
     {
         static void Main()
-        {
+        { 
 
             const string MsgNum = "Introdueix un nombre enter: ";
             const string MsgResult = "El valor absolut de {0} és {1}";
@@ -30,7 +30,7 @@ namespace MyApplication
 
             Console.WriteLine(MsgEnd);
             Console.ReadKey();
+
         }
     }
-
 }
