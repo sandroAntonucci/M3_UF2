@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat11\\activitat11\\activitat11.csproj": {}
+    "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat10\\activitat10\\activitat10.csproj": {}
   },
   "projects": {
-    "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat11\\activitat11\\activitat11.csproj": {
+    "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat10\\activitat10\\activitat10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat11\\activitat11\\activitat11.csproj",
-        "projectName": "activitat11",
-        "projectPath": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat11\\activitat11\\activitat11.csproj",
+        "projectUniqueName": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat10\\activitat10\\activitat10.csproj",
+        "projectName": "activitat10",
+        "projectPath": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat10\\activitat10\\activitat10.csproj",
         "packagesPath": "C:\\Users\\argo\\.nuget\\packages\\",
-        "outputPath": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat11\\activitat11\\obj\\",
+        "outputPath": "D:\\SandroA\\M3\\M3_UF2\\Activitats\\activitat10\\activitat10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\argo\\AppData\\Roaming\\NuGet\\NuGet.Config",

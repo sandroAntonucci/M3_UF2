@@ -19,9 +19,9 @@ namespace MyApplication
             const string MsgNum = "Introdueix un nombre enter: ";
             const string MsgEnd = "\nPrem una tecla per continuar.";
 
-            int numGuessed;
+            int numGuessed, j = 0;
 
-            bool numInList = false; 
+            bool numInList = false;
 
             Random random = new Random();
             int[] nums = new int[10];
@@ -29,15 +29,18 @@ namespace MyApplication
 
             for (int i = 0; i < nums.Length; i++)
             {
-                nums[i] = random.Next(0,200);
+                nums[i] = random.Next(201);
             }
 
             Console.WriteLine(MsgNum);
             numGuessed = Convert.ToInt32(Console.ReadLine());
 
-            foreach(int i in nums)
+
+
+            while(numInList == false && j < nums.Length)
             {
-                if (i == numGuessed) numInList = true;
+                if (nums[j] == numGuessed) numInList = true;
+                j++;
             };
 
             Console.WriteLine(numInList ? "El nombre es troba a la llista" : "El nombre no es troba a la llista");
@@ -46,5 +49,4 @@ namespace MyApplication
             Console.ReadKey();
         }
     }
-
 }
