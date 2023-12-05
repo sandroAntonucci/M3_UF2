@@ -65,6 +65,10 @@ namespace MyApplication
             Console.WriteLine(MsgEnd);
             Console.WriteLine(MsgEnd);
             Console.ReadKey();
+
+            Console.WriteLine(MsgEnd);
+            Console.WriteLine(MsgEnd);
+            Console.ReadKey();
         }
     }
 }
