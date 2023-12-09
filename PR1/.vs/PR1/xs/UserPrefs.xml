@@ -7,15 +7,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PR1/Program.cs">
     <Files>
-      <File FileName="PR1/Program.cs" Line="91" Column="86" />
+      <File FileName="PR1/Program.cs" Line="144" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PR1">
-            <Node name="PR1">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="PR1" expanded="True" />
           </Node>
         </State>
       </Pad>

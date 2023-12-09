@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "3YTOd4Yw6o7KDvYFT3Awu6D77S1w6ngO/mHJqSq2GGjFXuQXav0uFaOQniMVvtPcxm7gwjHtiG1Z7265wRvraA==",
+  "success": false,
+  "projectFilePath": "/Users/sandro/Documents/GitHub/M3_UF2/Activitats/activitat17/activitat17Test/activitat17Test.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'coverlet.collector' from remote source 'https://api.nuget.org/v3-flatcontainer/coverlet.collector/index.json'.",
+      "libraryId": "coverlet.collector"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'MSTest.TestAdapter' from remote source 'https://api.nuget.org/v3-flatcontainer/mstest.testadapter/index.json'.",
+      "libraryId": "MSTest.TestAdapter"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'MSTest.TestFramework' from remote source 'https://api.nuget.org/v3-flatcontainer/mstest.testframework/index.json'.",
+      "libraryId": "MSTest.TestFramework"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.NET.Test.Sdk' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json'.",
+      "libraryId": "Microsoft.NET.Test.Sdk"
+    }
+  ]
+}
