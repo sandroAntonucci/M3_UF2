@@ -17,18 +17,63 @@ namespace MyApplication
         static void Main()
         {
 
-            const string MsgNum = "Introdueix un nombre romà: ";
+            const string MsgRomanNum = "Introdueix un nombre romà: ";
+            const string MsgDecimalNum = "El teu nombre romà en decimal és ";
             const string MsgEnd = "\nPrem una tecla per continuar.";
 
-            int num;
+            string romanNum;
 
-            Console.Write(MsgNum);
-            num = Convert.ToInt32(Console.ReadLine());
+            Console.Write(MsgRomanNum);
+            romanNum = Console.ReadLine();
 
+
+            Console.WriteLine(MsgDecimalNum + RomanToDecimal(romanNum));
 
             Console.WriteLine(MsgEnd);
             Console.ReadKey();
         }
-    }
 
+        public static int RomanToDecimal(string romanNum){
+
+            
+
+            int[] values = { 1000, 500, 100, 50, 10, 5, 1 };
+
+            int decimalNum = 0, letter = 0;
+            bool validRomanNum = true, substraction = false;
+            string validLetters = "mdclxvi";
+
+            romanNum = romanNum.ToLower();
+
+            // Comprueba que el número romano sea válido
+            while (validRomanNum && letter < romanNum.Length)
+            {
+                if (!validLetters.Contains(romanNum[letter])) {
+
+                    validRomanNum = false;
+                    return -1;
+                } 
+                letter++;
+            }
+
+            
+            for (int i = 0; i < romanNum.Length; i++)
+            {
+                int letterValue = values[validLetters.IndexOf(romanNum[i])];
+                
+                for(int j = i; j < romanNum.Length; j++)
+                {
+                    if (letterValue < values[validLetters.IndexOf(romanNum[j])]) substraction = true;
+                }
+
+                if (substraction) decimalNum -= letterValue;
+                else decimalNum += letterValue;
+
+                substraction = false;
+            }
+
+            return decimalNum;
+
+        }
+    }
 }
