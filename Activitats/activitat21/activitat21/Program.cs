@@ -60,17 +60,14 @@ namespace MyApplication
             for (int i = 0; i < romanNum.Length-1; i++)
             {
                 int letterValue = values[validLetters.IndexOf(romanNum[i])];
-                
-
                 if (letterValue < values[validLetters.IndexOf(romanNum[i+1])]) decimalNum -= letterValue;
                 else decimalNum += letterValue;
             }
 
-            decimalNum += values[validLetters.IndexOf(romanNum[-1])];
+            decimalNum += values[validLetters.IndexOf(romanNum[romanNum.Length-1])];
 
 
             return decimalNum;
-
         }
     }
 }
