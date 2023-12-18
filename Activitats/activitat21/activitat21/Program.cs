@@ -40,7 +40,7 @@ namespace MyApplication
             int[] values = { 1000, 500, 100, 50, 10, 5, 1 };
 
             int decimalNum = 0, letter = 0;
-            bool validRomanNum = true, substraction = false;
+            bool validRomanNum = true;
             string validLetters = "mdclxvi";
 
             romanNum = romanNum.ToLower();
@@ -57,20 +57,17 @@ namespace MyApplication
             }
 
             
-            for (int i = 0; i < romanNum.Length; i++)
+            for (int i = 0; i < romanNum.Length-1; i++)
             {
                 int letterValue = values[validLetters.IndexOf(romanNum[i])];
                 
-                for(int j = i; j < romanNum.Length; j++)
-                {
-                    if (letterValue < values[validLetters.IndexOf(romanNum[j])]) substraction = true;
-                }
 
-                if (substraction) decimalNum -= letterValue;
+                if (letterValue < values[validLetters.IndexOf(romanNum[i+1])]) decimalNum -= letterValue;
                 else decimalNum += letterValue;
-
-                substraction = false;
             }
+
+            decimalNum += values[validLetters.IndexOf(romanNum[-1])];
+
 
             return decimalNum;
 
