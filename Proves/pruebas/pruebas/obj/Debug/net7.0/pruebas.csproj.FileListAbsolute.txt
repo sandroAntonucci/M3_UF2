@@ -1,0 +1,15 @@
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\bin\Debug\net7.0\pruebas.exe
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\bin\Debug\net7.0\pruebas.deps.json
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\bin\Debug\net7.0\pruebas.runtimeconfig.json
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\bin\Debug\net7.0\pruebas.dll
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\bin\Debug\net7.0\pruebas.pdb
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.csproj.AssemblyReference.cache
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.AssemblyInfoInputs.cache
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.AssemblyInfo.cs
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.dll
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\refint\pruebas.dll
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.pdb
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\pruebas.genruntimeconfig.cache
+D:\SandroA\M3\M3_UF2\Proves\pruebas\pruebas\obj\Debug\net7.0\ref\pruebas.dll
