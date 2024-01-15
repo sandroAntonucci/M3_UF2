@@ -1,0 +1,15 @@
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\bin\Debug\net8.0\SierpinskiTriangle.exe
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\bin\Debug\net8.0\SierpinskiTriangle.deps.json
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\bin\Debug\net8.0\SierpinskiTriangle.runtimeconfig.json
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\bin\Debug\net8.0\SierpinskiTriangle.dll
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\bin\Debug\net8.0\SierpinskiTriangle.pdb
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.AssemblyInfoInputs.cache
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.AssemblyInfo.cs
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.sourcelink.json
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.dll
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\refint\SierpinskiTriangle.dll
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.pdb
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\SierpinskiTriangle.genruntimeconfig.cache
+D:\SandroA\M3\M3_UF2\Repte 1\SierpinskiTriangle\SierpinskiTriangle\obj\Debug\net8.0\ref\SierpinskiTriangle.dll
