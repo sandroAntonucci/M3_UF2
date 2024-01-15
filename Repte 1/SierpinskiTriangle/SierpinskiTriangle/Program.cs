@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 namespace MyApplication
 {
@@ -6,10 +7,11 @@ namespace MyApplication
     {
         public static void Main()
         {
+            int spaces = 3;
 
-            string[] t = Triangle(3);
+            string[] t = Triangle(spaces);
 
-            foreach (string s in t) Console.WriteLine(s + s);
+            Sierpinski(t, spaces);
 
         }
         
@@ -41,22 +43,22 @@ namespace MyApplication
         }
 
         
-        public static void Sierpinski(int spaces)
+        public static void Sierpinski(string[] t, int spaces, int quant)
         {
+            string[] triangles = new string[quant];
+            string space = "";
+            string actualTriangle = "";
 
-            int asterisks = 1;
+            foreach (string s in t){
 
-            while (spaces > 0)
-            {
-                for (int i = 0; i < spaces; i++) Console.Write(" ");
-                for (int i = 0; i < asterisks; i++) Console.Write("* ");
+                for (int i = 0; i <= spaces; i++) space += " ";
+                
+                actualTriangle += space + s + "\n";
 
-                Console.WriteLine();
-                spaces--;
-                asterisks++;
+                space = "";
 
             }
-
+            foreach (string s in t) Console.WriteLine(s + s);
 
         }
     }
