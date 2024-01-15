@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\TestProjectJanEspana\\TestProjectJanEspana.csproj": {}
+  },
+  "projects": {
+    "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\TestProjectJanEspana\\TestProjectJanEspana.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\TestProjectJanEspana\\TestProjectJanEspana.csproj",
+        "projectName": "TestProjectJanEspana",
+        "projectPath": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\TestProjectJanEspana\\TestProjectJanEspana.csproj",
+        "packagesPath": "C:\\Users\\argo\\.nuget\\packages\\",
+        "outputPath": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\TestProjectJanEspana\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\argo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\UnitTestingJanEspana.csproj": {
+                "projectPath": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\UnitTestingJanEspana.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\UnitTestingJanEspana.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\UnitTestingJanEspana.csproj",
+        "projectName": "UnitTestingJanEspana",
+        "projectPath": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\UnitTestingJanEspana.csproj",
+        "packagesPath": "C:\\Users\\argo\\.nuget\\packages\\",
+        "outputPath": "D:\\SandroA\\M3\\M3_UF2\\UnitTestingJanEspana\\UnitTestingJanEspana\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\argo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

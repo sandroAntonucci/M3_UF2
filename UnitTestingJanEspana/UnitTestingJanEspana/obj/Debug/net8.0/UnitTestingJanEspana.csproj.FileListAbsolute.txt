@@ -1,0 +1,15 @@
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\bin\Debug\net8.0\UnitTestingJanEspana.exe
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\bin\Debug\net8.0\UnitTestingJanEspana.deps.json
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\bin\Debug\net8.0\UnitTestingJanEspana.runtimeconfig.json
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\bin\Debug\net8.0\UnitTestingJanEspana.dll
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\bin\Debug\net8.0\UnitTestingJanEspana.pdb
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.AssemblyInfoInputs.cache
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.AssemblyInfo.cs
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.sourcelink.json
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.dll
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\refint\UnitTestingJanEspana.dll
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.pdb
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\UnitTestingJanEspana.genruntimeconfig.cache
+D:\SandroA\M3\M3_UF2\UnitTestingJanEspana\UnitTestingJanEspana\obj\Debug\net8.0\ref\UnitTestingJanEspana.dll

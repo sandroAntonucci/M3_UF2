@@ -1,0 +1,15 @@
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\bin\Debug\net8.0\CincPometes.exe
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\bin\Debug\net8.0\CincPometes.deps.json
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\bin\Debug\net8.0\CincPometes.runtimeconfig.json
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\bin\Debug\net8.0\CincPometes.dll
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\bin\Debug\net8.0\CincPometes.pdb
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.AssemblyInfoInputs.cache
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.AssemblyInfo.cs
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.sourcelink.json
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.dll
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\refint\CincPometes.dll
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.pdb
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\CincPometes.genruntimeconfig.cache
+D:\SandroA\M3\M3_UF2\CincPometes\CincPometes\obj\Debug\net8.0\ref\CincPometes.dll
