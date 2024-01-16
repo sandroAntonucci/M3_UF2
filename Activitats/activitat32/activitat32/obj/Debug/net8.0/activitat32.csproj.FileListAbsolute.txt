@@ -1,0 +1,15 @@
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\bin\Debug\net8.0\activitat32.exe
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\bin\Debug\net8.0\activitat32.deps.json
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\bin\Debug\net8.0\activitat32.runtimeconfig.json
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\bin\Debug\net8.0\activitat32.dll
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\bin\Debug\net8.0\activitat32.pdb
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.AssemblyInfoInputs.cache
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.AssemblyInfo.cs
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.csproj.CoreCompileInputs.cache
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.sourcelink.json
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.dll
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\refint\activitat32.dll
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.pdb
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\activitat32.genruntimeconfig.cache
+D:\SandroAntonucci\M3_UF2\Activitats\activitat32\activitat32\obj\Debug\net8.0\ref\activitat32.dll

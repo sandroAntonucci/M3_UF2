@@ -1,0 +1,10 @@
+1. public static bool CheckNumBetweenRange(int num, int min, int max): Comprova que un número estigui entre un rang
+
+2. public static bool CheckValidNameChars(string name): Comprova que el nom no tingui caràcters especials.
+
+3. public static bool CheckTwoVocalsInName(string name): Comprova que una cadena tingui al menys dos vocals
+
+4. public static void AssignWholeMagicDust(ref int evil, ref int magicDustOne, ref int magicDustTwo, ref int magicDustTwo, ref int magicDustThree, ref int magicDustFour): Assigna el pols màgic corresponent a tots els personatges i deixa la resta a evil.
+
+5. public static void AssignPartialMagicDust(ref int evil, ref int magicDustOne, ref int magicDustTwo, ref int magicDustTwo, ref int magicDustThree, ref int magicDustFour): Assigna el 5% de evil al pols màgic de cada personatge i deixa la resta a evil 
+ 
