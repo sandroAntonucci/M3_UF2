@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("activitat32")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2db0262ecff5d6730ca2a350d1e9fef349e80e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd77842fbbb49b60f2e990303c27a5793ee61f5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("activitat32")]
 [assembly: System.Reflection.AssemblyTitleAttribute("activitat32")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -52,7 +52,7 @@ namespace TestProjectSuperFour
     }
 
     [TestClass]
-    public class UnitTestCheckNoSpecialChars
+    public class UnitTestCheckSpecialChars
     {
         [TestMethod]
         public void EmptyString_ReturnsTrue()
@@ -157,22 +157,25 @@ namespace TestProjectSuperFour
         {
 
             //Arrange
-
-            int evil = 4001, magicDustOne = 0, magicDustTwo = 0, magicDustThree = 0, magicDustFour = 0;
+            const int BaseEvil = 4001;
+            
+            int evil = 4001, magicDustOne = 45, magicDustTwo = 0, magicDustThree = 0, magicDustFour = 0;
 
             //Act
-            SuperFour.AssignWholeMagicDust(ref evil, ref magicDustOne, ref magicDustTwo, ref magicDustThree, ref magicDustFour); 
+            SuperFour.AssignWholeMagicDust(ref evil, ref magicDustOne, ref magicDustTwo, ref magicDustThree, ref magicDustFour);
 
             //Assert
-            Assert.AreEqual(magicDustOne, evil / 4);
-            Assert.AreEqual(magicDustTwo, evil / 4);
-            Assert.AreEqual(magicDustThree, evil / 4);
-            Assert.AreEqual(magicDustFour, evil / 4);
-            Assert.AreEqual(evil, evil % 4);
+            Assert.AreEqual(magicDustOne, BaseEvil / 4);
+            Assert.AreEqual(magicDustTwo, BaseEvil / 4);
+            Assert.AreEqual(magicDustThree, BaseEvil / 4);
+            Assert.AreEqual(magicDustFour, BaseEvil / 4);
+            Assert.AreEqual(evil, BaseEvil % 4);
+
         }
 
     }
 
+    
     [TestClass]
     public class UnitTestAssignPartialMagicDust
     {
@@ -181,6 +184,7 @@ namespace TestProjectSuperFour
         {
 
             //Arrange
+            const int BaseEvil = 4001;
 
             int evil = 4001, magicDustOne = 0, magicDustTwo = 0, magicDustThree = 0, magicDustFour = 0;
 
@@ -188,13 +192,14 @@ namespace TestProjectSuperFour
             SuperFour.AssignPartialMagicDust(ref evil, ref magicDustOne, ref magicDustTwo, ref magicDustThree, ref magicDustFour);
 
             //Assert
-            Assert.AreEqual(magicDustOne, evil * 5 / 100);
-            Assert.AreEqual(magicDustTwo, evil * 5 / 100);
-            Assert.AreEqual(magicDustThree, evil * 5 / 100);
-            Assert.AreEqual(magicDustFour, evil * 5 / 100);
-            Assert.AreEqual(evil, evil * 80 / 100);
+            Assert.AreEqual(magicDustOne, BaseEvil * 5 / 100);
+            Assert.AreEqual(magicDustTwo, BaseEvil * 5 / 100);
+            Assert.AreEqual(magicDustThree, BaseEvil * 5 / 100);
+            Assert.AreEqual(magicDustFour, BaseEvil * 5 / 100);
+            Assert.AreEqual(evil, BaseEvil * 80 / 100);
         }
 
     }
+    
 
 }
